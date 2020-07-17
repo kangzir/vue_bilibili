@@ -40,7 +40,6 @@ import EditList from './childEdit/EditList'
         })
       },
       afterRead(file){
-        console.log(file);
         //构造上传对象
         const formdata = new FormData()
         // 将内容添加进去
@@ -48,7 +47,7 @@ import EditList from './childEdit/EditList'
         // 发送请求
         this.$http.post('/upload',formdata).then( res =>{
           console.log(res);
-          //上传的照片替换到当然使用的数据里
+          //上传的照片替换到当前使用的数据里
           this.right.user_img = res.data.url
           //本地上传完上传到服务器
           this._getImgUpload()
