@@ -8,7 +8,11 @@ import { Toast } from 'vant';
 import 'vant/lib/index.css';
 import http from './network/http'
 import _ from 'lodash'
+
+import './assets/style.css'
 Vue.use(Vant);
+
+Vue.prototype.$bus = new Vue()
 
 Vue.prototype.$http = http
 Vue.prototype.$toast = Toast

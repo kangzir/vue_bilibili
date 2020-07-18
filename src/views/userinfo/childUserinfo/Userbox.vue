@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   p{
-    margin-left: 10px;
+    margin-left: 2.778vw;
     img{
       width: 19.444vw;
       height: 19.444vw;
@@ -55,7 +55,7 @@
 
   }
   div{
-    width: 250px;
+    width: 69.444vw;
     div{
       display: flex;
       align-items: center;

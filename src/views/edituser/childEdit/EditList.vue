@@ -118,17 +118,17 @@
   }
   .left{
     span:nth-child(1){
-      padding: 25px 5px;
+      padding: 6.944vw 1.389vw;
     }
     span{
       display: block;
-      padding: 10.001px 5px;
+      padding: 2.778vw 1.389vw;
     }
   }
   .right{
     span{
       display: block;
-      padding: 10.001px 5px;
+      padding: 2.778vw 1.389vw;
       img{
         width: 13.889vw;
         border-radius: 50%;

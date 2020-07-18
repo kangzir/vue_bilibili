@@ -5,7 +5,7 @@
     class="navbar" 
     navbartext="注册bilibili">
       <div 
-      style="font-size:13px"
+      style="font-size:3.611vw"
       slot="isShow"
       @click="$router.push('/register')">
       切换到注册

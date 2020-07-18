@@ -4,7 +4,7 @@
     <login-navbar 
     navbartext="注册bilibili">
       <div 
-      style="font-size:13px"
+      style="font-size:3.611vw"
       slot="isShow"
       @click="$router.push('/login')">
       切换到登陆
@@ -12,7 +12,7 @@
     </login-navbar>
     <!-- 输入框 -->
     <login-txtx 
-    style="margin: 15px 0;"
+    style="margin: 4.167vw 0;"
     type="text" 
     label="姓名"
     placeholder="请输入姓名"

@@ -1,7 +1,7 @@
 <template>
   <div class="hoem-navbar">
     <div class="left">
-      <img src="../../../assets/img/logo.png" alt="">
+      <img  @click.stop="$router.push('/home')" src="../../../assets/img/logo.png" alt="">
     </div>
     <div class="center">
       <van-icon name="search" />
@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="right">
-      <img src="../../../assets/img/head_img.jpg">
+      <img @click.stop="clickuserinfo" src="../../../assets/img/head_img.jpg">
       <p>下载APP</p>
     </div>
   </div>
@@ -19,7 +19,17 @@
 
 <script>
   export default {
-    name:''
+    name:'',
+    methods: {
+      clickuserinfo(){
+        if(!localStorage.getItem('token')){
+          this.$toast('请先登录')
+          this.$router.push('/login')
+          return
+        }
+        this.$router.push('/userinfo')
+      }
+    },
   }
 </script>
 
